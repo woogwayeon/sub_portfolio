@@ -1,0 +1,36 @@
+
+/* subpage : design > uniqlo */
+
+.f-line{
+	width: 600px;
+}
+
+
+
+.icon-set { padding-left: 10px; }
+
+.para-set .fonts p{
+	padding-left: 45px;
+	text-align: right;
+}
+
+.para-set .fonts p:nth-child(2){
+	padding-top: 15px;
+}
+
+.period .para-set{
+	padding-left: 1px;
+}
+.colorchips{
+	padding-top: 20px;
+}
+
+.para p{
+	line-height: 2.2em;
+/*	font-size: 18px;*/
+}
+
+.em-color{
+	color: #b94430;
+	font-weight: 800;
+}

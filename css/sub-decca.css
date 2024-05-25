@@ -1,0 +1,61 @@
+
+/* subpage : design > DECCA */
+
+.f-line{
+	width: 600px;
+}
+
+
+.mask{ 
+	width: 994px; 
+	height: 560px;
+	position: absolute;
+	top: 22px; left: 22px;
+	display: flex;
+}
+.mask img{ 
+/*	animation: slide-img 50s infinite linear 0.7s backwards;*/
+	width: 300%;
+	position: relative;
+	top:0; left: 0;
+}
+
+.icon-set { padding-left: 10px; }
+
+.para-set .fonts p{
+	padding-left: 45px;
+	text-align: right;
+}
+
+.para-set .fonts p:nth-child(2){
+	padding-top: 15px;
+}
+
+.period .para-set{
+	padding-left: 1px;
+}
+.colorchips{
+	padding-top: 20px;
+}
+
+.colorchips .icon-set:nth-child(1) p{
+	color: #888;
+}
+.colorchips .icon-set:nth-child(2) p{
+	color: #72c7f7;
+}
+
+.para p{
+	line-height: 2.2em;
+/*	font-size: 18px;*/
+}
+
+.em-color{
+	color: #72C7F7;
+	font-weight: 800;
+}
+
+.layout-img img{
+	width: 100%;
+	box-shadow: none;
+}
