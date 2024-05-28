@@ -12,12 +12,32 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="css/sub-main.css">
+<link rel="stylesheet" href="css/loading.css">
 
 <!-- 파비콘 -->
 <link rel="icon" href="images/icon/sublime-icon-pav.png">
 </head>
 <body>
 
+<div class="loading">
+	<div>
+		<img src="images/icon/loading.svg" alt="">
+	</div>
+	<div>Wating</div>
+	<div>
+		&#111;&#40;&#42;&#65374;o&#65374;&#42;&#41;&#111;
+	</div>
+</div>
+
+<script>
+	
+window.onload = function(){
+	setTimeout(function(){
+		document.querySelector(".loading").style.display="none"
+	},600)
+}
+
+</script>
 
 <div id="modal-contact">
 	<div class="inner">
