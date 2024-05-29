@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>design_Jellycat</title>
+<!-- Google Fonts : Lato -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+<!-- Google Fonts : Noto Sans KR -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/sub-main.css">
+<link rel="stylesheet" href="css/sub-jellycat.css">
+<link rel="stylesheet" href="css/loading.css">
+
+
+<!-- 파비콘 -->
+<link rel="icon" href="images/icon/sublime-icon-pav.png">
+</head>
+<body>
+
+<div class="loading">
+	<div>
+		<img src="images/icon/loading.svg" alt="">
+	</div>
+	<div>Wating</div>
+	<div>
+		&#111;&#40;&#42;&#94;&#65312;&#94;&#42;&#41;&#111;
+	</div>
+</div>
+
+<script>
+	
+window.onload = function(){
+	setTimeout(function(){
+		document.querySelector(".loading").style.display="none"
+	},600)
+}
+
+</script>
+
+
+<div id="modal-contact">
+	<div class="inner">
+		<div class="heading">
+			<div>
+				<img src="images/icon/mail-icon.svg" alt="연락처를 알려드릴게요">
+				<p>Easy Contect !</p>
+			</div>
+		</div>
+ 	
+	 	<div class="con-area">
+			<div class="call">
+				<div class="call-para">
+					<p>E-mail</p>
+					<p>woogwayeon&#64;icloud.com</p>
+				</div>
+
+				<div class="call-para">
+					<p>Cell Phone</p>
+					<p>010 - 5244 - 0835</p>
+				</div>
+
+				<a href="https://woogwayeon.github.io/sublime_portfolio/#profile" target="_blank">
+					<div class="contect">
+						<p>프로필 자세히 보러가기</p>
+						<img src="images/icon/arrow-open-icon.svg" alt="열기">
+					</div>
+				</a>
+			</div>
+
+			<div class="img">
+				<img src="images/face2.png" alt="프로필사진" class="face2">
+			</div>
+		</div>	
+
+		<div class="button">
+			닫기
+		</div>
+
+	</div>
+</div>
+
+
+<div id="wrap">
+	
+<div id="quick-bar">
+	<div class="inner">
+		<img src="images/icon/close-icon.svg" alt="창 닫기" onclick="window.close();">
+		<a href="sub-open/sub-jellycat.html" target="_blank">
+			<img src="images/icon/open-window-icon.svg" alt="브라우저에서 창 열기">
+		</a>
+		<img src="images/icon/call-icon.svg" alt="연락처 확인하기" class="open-contect">
+	</div>
+</div>
+
+<script>
+	const openMod = document.querySelector('.open-contect')
+	const callModal = document.querySelector('#modal-contact');
+	const face2 = document.querySelector('.face2');
+	const closeM = document.querySelector('.button');
+
+	callModal.style.display="none";
+
+	openMod.addEventListener("click", function(){
+		callModal.style.display="block";
+		callModal.style.animation="m-animation 0.5s";
+		face2.style.animation="face 3s"
+	})
+
+	closeM.addEventListener('click',()=>{
+		callModal.style.display="none";
+	})
+
+</script>
+
+<div id="visual">
+	<div class="inner">
+		<div class="iPhone">
+			<div class="mask">
+				<img src="images/mockup/jellycat-mockup.jpg" alt="" class="mac-window">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	const gall = document.querySelector(".mask")
+	const img = document.querySelector(".mac-window")
+	const tempItem = img.cloneNode(true);
+
+	gall.appendChild(tempItem);
+
+		
+	let y = 0;
+
+	function slideGall(){
+		
+
+		y = y - 1;
+
+		if( y < -(1395-445) ){ y=0; }
+
+		if( y > 0 ){ y= -(1395-445); }
+
+		img.style.top=y+"px";
+	}
+
+	setInterval(slideGall, 40);
+
+</script>
+
+<article id="con-wrap">
+
+	<header id="header">
+		<div class="inner">
+			<h1>Jellycat</h1>
+			<p>Mobile Web, APP RE-design</p>
+		</div>
+	</header>
+
+	<section id="preview">
+
+		<div class="inner">
+			<div class="f-line">
+				<div class="design-tool">
+					<h3>Design Tool</h3>
+					<div class="icon-set">
+						<img src="images/icon/figma-icon.svg" alt="photoshop">
+						<p>Figma</p>
+					</div>
+				</div>
+				<div class="contribution">
+					<h3>Contribution</h3>
+					<p>100%</p>
+					<p>Solo Proudct</p>
+				</div>
+			</div>
+
+			<div class="s-line">
+				<div class="period">
+					<h3>Production Period</h3>
+					<div class="para-set">
+						<p>Design</p>
+						<p>4 Days</p>
+					</div>
+					<h3>Project Proset</h3>
+					<div class="para-set">
+						<p>File</p>
+						<a href="http://naver.me/FwSlbktb" target="_blank" class="link-cloud">
+							<p>제작 기획.pdf</p>
+						</a>
+					</div>
+					<p class="h-ex">Naver Mybox로 연결됩니다</p>
+				</div>
+				<div class="setting">
+					<h3>Design Setting</h3>
+					<div class="para-set">
+						<p>Fonts</p>
+						<div class="fonts">
+							<p>Plus Jakarta Sans</p>
+							<!-- <p>Noto Sans KR</p> -->
+						</div>
+					</div>
+					<div class="colorchips">
+						<p>Colors</p>
+						<div class="c-circle">	
+							<div class="icon-set">
+								<img src="images/color/222.svg" alt="uniqlo hexcode">
+								<p>&#35;222222</p>
+							</div>
+							<div class="icon-set">
+								<img src="images/color/72C7F7-jelly.svg" alt="uniqlo hexcode">
+								<p>&#35;12BDD6</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<script>
+		
+		const cloud = document.querySelector('.link-cloud');
+		const cloudLink = document.querySelector('.h-ex');
+
+		console.log(cloudLink)
+
+		cloud.addEventListener('mouseover',()=>{
+			cloudLink.style.opacity=1
+		})
+		cloud.addEventListener('mouseleave',()=>{
+			cloudLink.style.opacity=0
+		})
+
+	</script>
+
+	<section id="overview">
+		<div class="inner">
+			<h2>Design Point</h2>
+
+			<div class="para">
+
+				<p>
+					피그마를 이용하여 디자인한 영국의 아기 인형 브랜드 젤리켓의 모바일 웹, 앱 메인과 서브페이지 제작물입니다
+				</p>
+				
+				<p>
+					로고 상징색인 <span class='em-color'>#12BDD6</span>을 강조색으로 이용했으며 사이트 통일감을 위해 투명도만 조절하여 디자인했습니다
+				</p>
+
+				<p>
+					옥색과 하늘빛이 갖고 있는 순수하고 깨끗한 느낌과 긍정적인 이미지를 차용하여 아기 용품 브랜드로서 아이덴티티를 극대화시키고자 했습니다
+				</p>
+				
+				<p>
+					메인페이지와 서브페이지 푸터는 간이 메뉴를 넣어 동일하게 제작하되,로그인 창과 개인정보 창은 단순화하여 쇼핑 시 번거로운 부분이 없도록 신경썼습니다
+				</p>
+
+				<p>
+					추천상품을 하단 가로배열해 확인할 수 있게 하여 제품을 무한 스크롤로 제공해 사용자의 페이지 평균 방문시간을 늘리고, 상대적으로 세로 스크롤에 익숙하지 않은 일반 사용자들까지 배려했습니다. 
+				</p>
+
+				<p>
+					2단 구성 후 메뉴 마지막에 할인 상품이나 이벤트 배너를 제시하여 상품에 호기심을 갖게 된 사용자는 해당 브랜드에 대한 인식까지 긍정적 경험으로 연계받을 수 있도록 설계하였습니다
+				</p>
+
+				<p>
+					페이지 상단에 가격과 후기, 옵션 선택과 장바구니에 넣기 버튼을 제공하여 쾌적한 쇼핑 환경 구축에 신경썼으며 아기용품 브랜드이니만큼 상품 상세고지를 꼼꼼하게 서술하여 하단에 배치했습니다.
+				</p>
+			</div>
+			<div class="btn">
+				<a href="sub-open/sub-jellycat.html">
+					<div class="inner">
+						<p>작업물 크게보기</p>
+						<img src="images/icon/arrow-open-icon.svg" alt="작업물 크게 확인해보기">
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="layout">
+		<h2>Preview</h2>
+		<div class="layout-img">
+			<div class='img1'>
+				<img src="images/mockup/jellycat-01.jpg" alt="">
+				<img src="images/mockup/jellycat-02.jpg" alt="">
+				<img src="images/mockup/jellycat-05.jpg" alt="">
+			</div>
+
+			<div class='img2'>
+				<img src="images/mockup/jellycat-03.jpg" alt="">
+				<img src="images/mockup/jellycat-04.jpg" alt="">
+				<img src="images/mockup/jellycat-06.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+</article>
+
+<footer id="footer">
+	<div class="f-inner"></div>
+</footer>
+
+</div>
+
+
+<script>
+
+	let observer = new IntersectionObserver((e)=>{
+		e.forEach((e)=>{
+			if(e.isIntersecting){
+				e.target.style.opacity= 1;
+			}else{
+				e.target.style.opacity= 0;
+			}
+		})
+	})
+
+	const h1 = document.querySelector('#header .inner h1')
+	const headerP = document.querySelector('#header .inner p')
+	const firstLine = document.querySelector('.f-line')
+	const secondLine = document.querySelector('.s-line')
+	const h2 = document.querySelectorAll('h2')
+	const para = document.querySelectorAll('.para p')
+	const layOut = document.querySelectorAll('#layout .layout-img img')
+	const btn = document.querySelector('.btn')
+
+	console.log(layOut[0])
+
+	observer.observe(h1)
+	observer.observe(headerP)
+	observer.observe(firstLine)
+	observer.observe(secondLine)
+	observer.observe(btn)
+
+	for(let i=0; i<7; i++){
+		observer.observe(para[i])
+	}
+
+	for(let i=0; i<2; i++){
+		observer.observe(h2[i])
+	}
+
+	for(let k=0; k<6; k++){
+		observer.observe(layOut[k])
+	}	
+</script>
+
+
+</body>
+</html>
