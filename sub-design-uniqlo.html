@@ -185,6 +185,14 @@ window.onload = function(){
 						<p>Design</p>
 						<p>3 Days</p>
 					</div>
+					<h3>Project Proset</h3>
+					<div class="para-set">
+						<p>File</p>
+						<a href="http://naver.me/GYc844DQ" target="_blank" class="link-cloud">
+							<p>가이드.pdf</p>
+						</a>
+					</div>
+					<p class="h-ex">Naver Mybox로 연결됩니다</p>
 				</div>
 				<div class="setting">
 					<h3>Design Setting</h3>
@@ -213,6 +221,21 @@ window.onload = function(){
 		</div>
 
 	</section>
+	<script>
+		
+		const cloud = document.querySelector('.link-cloud');
+		const cloudLink = document.querySelector('.h-ex');
+
+		console.log(cloudLink)
+
+		cloud.addEventListener('mouseover',()=>{
+			cloudLink.style.opacity=1
+		})
+		cloud.addEventListener('mouseleave',()=>{
+			cloudLink.style.opacity=0
+		})
+
+	</script>
 	<section id="overview">
 		<div class="inner">
 			<h2>Design Point</h2>
@@ -224,8 +247,12 @@ window.onload = function(){
 				</p>
 
 				<p>
+					<span class="em-color">디자인 가이드</span>를 제작하여 팀 작업 시 서체와 강조색을 고정시키고, 메뉴얼에 따라 협업 시에도 페이지 구성이나 전체적인 이미지가 바뀌지 않게 작업하였습니다.
+				</p> 
+
+				<p>
 					강조색 선택 시 브랜드 로고에 사용된 선명한 빨강을 활용하고 싶었습니다.<br>
-					그러나 기존 로고가 갖고있던 색은 채도가 높아 강조색으로 사용했을 때 집중이 분산되었습니.<br> 그렇기에 살짝 채도를 낮춘 <span class="em-color">&#35;B94430</span>를 강조색으로 활용했습니다.<br> 사이트 이용시, 사용자의 시각 변환이 원활하게 될 것이라는 기대가 있습니다.
+					그러나 기존 로고가 갖고있던 색은 채도가 높아 강조색으로 사용했을 때 집중이 분산되었습니다.<br> 그렇기에 살짝 채도를 낮춘 <span class="em-color">&#35;B94430</span>를 강조색으로 활용했습니다.<br> 사이트 이용시, 사용자의 시각 변환이 원활하게 될 것이라는 기대가 있습니다.
 				</p>
 
 				<p>
@@ -291,7 +318,7 @@ window.onload = function(){
 	observer.observe(layOut)
 	observer.observe(btn)
 
-	for(let i=0; i<3; i++){
+	for(let i=0; i<4; i++){
 		observer.observe(para[i])
 	}
 
