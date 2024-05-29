@@ -1,0 +1,125 @@
+
+/* subpage : design > DECCA */
+
+.f-line{
+	width: 600px;
+}
+.iPhone{
+	width: 700px; height: 506px;
+	margin: 0 auto;
+/*	border: 3px solid pink;*/
+	background: url(../images/iphone.png) no-repeat;
+	background-size: contain;
+	position: relative;
+}
+
+.mask{ 
+	background: cyan; 
+	width: 221px; 
+	height: 448px;
+	border-bottom-right-radius: 24px;
+	border-bottom-left-radius: 24px;
+	overflow:hidden; 
+	position: absolute;
+	top: 44px; left: 189px;
+}
+
+/*@keyframes slide-img{
+	0%{ top: 0%; }
+	100%{ top: -450%; }
+}*/
+
+.mask img{ 
+/*	animation: slide-img 50s infinite linear 0.7s backwards;*/
+	width: 100%;
+	position: relative;
+	top:0; left: 0;
+}
+
+
+.icon-set { padding-left: 30px; }
+
+.para-set .fonts p{
+	padding-left: 45px;
+	text-align: right;
+}
+
+.para-set .fonts p:nth-child(2){
+	padding-top: 15px;
+}
+
+.period .para-set{
+	padding-left: 1px;
+}
+
+.period h3:nth-child(3){
+	padding-top: 90px;
+	padding-left: 30px;
+}
+
+.period a{ text-decoration: underline; }
+
+#preview .h-ex{
+	width: 188px;
+	height: 45px;
+	line-height: 45px;
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+	left: 90px;
+	top: -10px;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	opacity: 0;
+	transition: 0.7s;
+}
+
+
+.colorchips{
+	padding-top: 20px;
+}
+
+.colorchips .icon-set:nth-child(1) p{
+	color: #222;
+}
+.colorchips .icon-set:nth-child(2) p{
+	color: #12BDD6;
+}
+
+.para p{
+	line-height: 2.2em;
+/*	font-size: 18px;*/
+}
+
+.em-color{
+	color: #12BDD6;
+	font-weight: 800;
+}
+
+.layout-img{ 
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+	text-align: center; 
+	opacity: 1;
+}
+
+.layout-img .img1{
+	padding-bottom: 80px;
+}
+
+.layout-img img{
+	width: 27%;
+	margin-left: 25px;
+	opacity: 0;
+	transition: 2.5s;
+}
+
+.layout-img .img1 img:nth-child(3),.layout-img .img2 img:nth-child(3){
+	margin-right: 20px;
+}
